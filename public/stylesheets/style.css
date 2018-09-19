@@ -1,0 +1,21 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#indicator {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  background: rgb(182, 255, 242);
+  transition: all 0.3s ease-in-out;
+}
+
+#indicator.on {
+  width: 16vw;
+}

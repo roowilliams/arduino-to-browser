@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  #indicator
+    h1= title
+    p Welcome to #{title}
+    
+  script(src="/socket.io/socket.io.js")
+  script.
+    var socket = io('//localhost:3000');
+    socket.on('arduino', function (data) {
+      var number = parseInt(data)
+      console.log(number)
+      var indicator = document.getElementById('indicator')
+      if (number) {
+        indicator.classList.add('on')
+      } else {
+        indicator.classList.remove('on')
+      }
+
+    });
