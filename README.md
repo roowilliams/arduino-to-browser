@@ -9,13 +9,14 @@ bool state = LOW;
 bool lastState;
 
 void setup() {
+    // runs once
     pinMode(interruptPin, INPUT_PULLUP);
     attachInterrupt(digitalPinToInterrupt(interruptPin), countSpeed, CHANGE);
     Serial.begin(9600);
   }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // code here runs repeatedly in a loop
   if (state != lastState) {
     Serial.println(state);
     lastState = state;
