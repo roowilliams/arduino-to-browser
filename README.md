@@ -1,5 +1,11 @@
 ## Arduino Script
 
+![Arduino to computer interaction]
+
+[Demo]
+
+[Demo]: https://raw.githubusercontent.com/roowilliams/arduino-to-browser/master/giphy.gif
+
 This is for a hall sensor using an interrupt.
 
 ```c
