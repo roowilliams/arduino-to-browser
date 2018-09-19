@@ -1,6 +1,7 @@
-## Arduino Script
-
+# Arduino to Browser
 ![Arduino to computer interaction](https://raw.githubusercontent.com/roowilliams/arduino-to-browser/master/giphy.gif)
+
+## Arduino Script
 
 This is for a hall sensor using an interrupt.
 
